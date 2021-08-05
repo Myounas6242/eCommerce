@@ -6,21 +6,11 @@
             <h1>Login</h1>
         </div>
         <div class="card-body ">
-
-            @if($errors)
-            @foreach($errors->all() as $error)
-            <h4 class="text-danger">{{$error}}</h4>
-            @endforeach
-            @endif
-
-            @if(Session::has('error'))
-            <h4 class="text-danger">{{session('error')}}</h4>
-            @endif
-            <form method="post">
+            <form method="post" action="login">
                 @csrf
                 <div class="form-group">
                     <label for="email">User Name</label>
-                    <input type="text" class="form-control" name="username" placeholder="username" id="email">
+                    <input type="text" class="form-control" name="email" placeholder="email" id="email">
                 </div>
                 <div class="form-group">
                     <label for="pwd">Password:</label>
