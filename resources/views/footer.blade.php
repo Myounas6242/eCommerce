@@ -1,5 +1,6 @@
-<div class=" pt-5">
-    <div class="card-footer text-muted ">
-    <h4 class="text-center">copyright</h4>
+<div style="clear:both" class="panel panel-default">
+    <div class="panel-body">
+      Panel content
+    </div>
+    <div class="panel-footer">Panel footer</div>
   </div>
-</div>
